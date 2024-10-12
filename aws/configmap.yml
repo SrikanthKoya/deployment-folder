@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap
+data:
+  foodcataloguedb_url: jdbc:mysql://127.0.0.1:3306/foodcataloguedb?allowPublicKeyRetrieval=true&useSSL=false
+  orderdb_url:  mongodb://localhost:27017/orderdb
+  restaurantdb_url: jdbc:mysql://127.0.0.1:3306/restaurantdb?allowPublicKeyRetrieval=true&useSSL=false
+  userdb_url: jdbc:mysql://127.0.0.1:3306/userdb?allowPublicKeyRetrieval=true&useSSL=false
+  eureka_service_address: http://eureka-0.eureka-service:8761/eureka
